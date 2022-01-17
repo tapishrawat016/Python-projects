@@ -87,7 +87,7 @@ def add_password():
 def find_password():
     website_name = website_input.get()
     try:
-        with open("password_manager.json", "r") as data_file:
+        with open("data.json", "r") as data_file:
             data = json.load(data_file)
 
     except FileNotFoundError:
